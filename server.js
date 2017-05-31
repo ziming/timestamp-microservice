@@ -6,6 +6,10 @@ const app = express();
 
 // In Cloud9 use port 8080
 
+app.get('/', (req, res) => {
+    res.send('Welcome! try a url like /1450137600');
+});
+
 // To run your application run the command node server.js in your console.
 app.get('/:dateInput', (req, res) => {
     
