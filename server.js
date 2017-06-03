@@ -35,11 +35,9 @@ app.get('/:dateInput', (req, res) => {
     }
         
     res.json({ 'unix': null, 'natural': null });
-        
-    
     
 });
 
-app.listen(8080, function () {
-  console.log('Timestamp app listening on port 8080!')
+app.listen(process.env.PORT || 8080, function () {
+  console.log('Timestamp app started!')
 });
